@@ -15,6 +15,24 @@ export default function App() {
     useEffect(() => {
       console.log("Current user from context:", user);
     }, [user]);
+
+  //if the backend has an endpoint like /api/userData to return user data from a token
+  /*const { setUser } = useUser();
+
+useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (token) {
+      axios.get('http://127.0.0.1:8000/api/userData', {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      })
+      .then(res => {
+        setUser(res.data);
+      })
+    }
+  }, []);
+  */
     return (
         <>
         <Routes>
