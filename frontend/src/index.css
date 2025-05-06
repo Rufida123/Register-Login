@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.mainDev {
+  background-image: url('background.png');
+  background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat;  
+  background-attachment: fixed;  
+  width: 100vw;                  
+  height: 100vh;                 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+h1{
+  text-align: center;
+  font-size: 3rem;
+  color: #e76bf3;
+  font-family: 'Segoe UI';
+  letter-spacing: 2px;
+  margin-top: 40px;
+  text-shadow: 2px 2px 4px  #ff66cc;
+  padding-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+*{
+  font-size: 16px;
+}
+
+form{
+  width: 400px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  transition: box-shadow 0.3s ease;
+}
+form:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.register{
+  display: flex;
+  align-items:center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+input{
+  padding: 10px 20px;
+  width: 90%;
+  outline: none;
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 0 0 1px 1px rgb(0,0,0,0.1);
+  transition: 0.3s;
+  margin-bottom: 8px;
+}
+input:focus{
+  border: 2px solid #86b7fe;
+}
+input::placeholder{
+  color: rgb(0,0,0,0.3);
+}
+
+button{
+  background-color: #86b7fe;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid white;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+}
+button:hover{
+      background-color: white;
+      border: 2px solid #86b7fe;
+      color: #86b7fe;
+}
+.error{
+  color: red;
+  font-size: 14px;
+  margin-top: 0;
+}
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #ccc;
+  border-top: 3px solid #333;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
