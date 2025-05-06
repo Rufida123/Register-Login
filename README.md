@@ -1,7 +1,7 @@
 # Register-Login System
 
 This is a simple registration and login system built with **React** (frontend) and **Laravel** (backend). The application supports user registration, login, token storage, and basic validation.
-
+**Note**: The backend code is not originally written by me. It was sourced from the internet.
 ---
 
 ## 🔧 Features
